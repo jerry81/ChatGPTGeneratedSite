@@ -439,4 +439,78 @@ Look for some inspiration on websites like Dribbble and Behance, to see how othe
 
 You can use these various techniques and features to make your website more visually appealing and professional-looking. Keep experimenting, and don't be afraid to try new things. Please let me know if you have any specific question or requirement, I'll be happy to help you.
 
+some of the images got squashed.  is there a general way to fix this?
+Images can become squashed or distorted when they are displayed on a website due to a number of reasons, such as using images with different aspect ratios than the containers they are placed into.
+
+Here are a few ways to fix this:
+
+Using CSS's object-fit property you can ensure the image is always the correct aspect ratio and that it's not squashed.
+
+Also max-width and max-height property can be used in conjunction with object-fit property to ensure that the image always fits the container.
+
+You can also use a div container and give it the class of 'img-container' and set the img tag as a background image so that you can control the size and aspect ratio using the background-size and background-position properties.
+
+If your image is inside a div container, you can try setting the width and height of the div container to the same aspect ratio as the image, this will prevent the image from being squashed.
+
+Using a picture element to provide alternative images with different sizes, you can define the size of the image to fit the container.
+
+It's also a good idea to make sure that the images you are using are the correct size and aspect ratio before uploading them to your website, to ensure that they display correctly.
+
+Please let me know if you have any other question or concerns, I'll be happy to help you out
+
+
+
+
+jerry.tann@endress.com
+Please provide code to fix the image squashing issue.  Let's try the object-fit method.
+Sure, here's an example of how you can use the object-fit CSS property to fix the image squashing issue:
+
+Copy code
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+In this example, the max-width property is set to 100%, ensuring that the image will never be wider than the container. The height property is set to auto, so that the height of the image will adjust proportionately with the width. And the object-fit property is set to cover, so that the entire container is covered by the image, while preserving its aspect ratio.
+
+By using this code, the image will be automatically scaled to fill the container, while maintaining its aspect ratio, so that it will not be squashed or distorted.
+
+Alternatively, you can use the object-fit:contain it will fit the image within the container, but the entire image may not be visible and instead maintains the aspect ratio and adjust its size accordingly.
+
+You can add this code in the css file that you are using for styling the website. If you don't have one yet, you can create a new css file and name it for example style.css and link it in the head of your html file by using the link tag with rel='stylesheet' and href='path/to/style.css'.
+
+Please let me know if you have any other question or concerns, I'll be happy to help you out.
+
+
+
+
+jerry.tann@endress.com
+On a large screen, all the tiles are displayed on a single row.  Let's display a maximum of 3 tiles per row.  Please provide to code to do this.
+You can use the flex-wrap and flex-basis properties to control the number of tiles per row. Here's an example of how you can display a maximum of 3 tiles per row:
+
+Copy code
+.cat-tiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cat-tile {
+  flex: 1 0 33.33%; /* flex-basis property set to 33.33% */
+  margin: 20px;
+  text-align: center;
+}
+In this example, display:flex is used to create a flexbox layout for the cat-tiles container, flex-wrap:wrap is used to allow the items inside the container to wrap onto multiple lines if necessary.
+
+The flex: 1 0 33.33% value applies to the .cat-tile class.
+flex: 1 0 33.33% means the elements will take up 1 unit of the available space, don't shrink and have a flex-basis of 33.33% which means it will take exactly one third of the width of the parent container.
+
+It's important to note that on smaller screens or smaller viewports, the tiles will stack vertically to ensure that the content is still legible and easily accessible.
+
+You can adjust the values of flex-basis property to fit your needs, such as 30% or 25% to see how it fits the content on different screens.
+
+You can add this CSS code to the CSS file you are currently using for the website.
+Please let me know if you have any other question or concerns, I'll be happy to help you out.
+
 ```
+
+

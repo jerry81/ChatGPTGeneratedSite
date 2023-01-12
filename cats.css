@@ -32,6 +32,36 @@ h1 {
 }
 
 img {
-  width: 300px;
-  height: 200px;
+  width: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+
+.cat-tiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cat-tile {
+  flex: 1 0 33.33%; /* flex-basis property set to 33.33% */
+  margin: 20px;
+  text-align: center;
+}
+
+.cat-thumbnail {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.cat-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cat-description {
+  font-size: 18px;
+  color: #666;
 }
