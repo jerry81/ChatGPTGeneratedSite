@@ -45,6 +45,7 @@ ChatGPT
 Here is some sample starter code for a simple website that displays a list of cat names:
 
 Copy code
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,12 +60,14 @@ Copy code
   </ul>
 </body>
 </html>
+```
 This code uses basic HTML to create a webpage with a heading and an unordered list of three cat names.
 
 You can use CSS to style this HTML and make it look better,
 Here is an example of styling the list:
 
 Copy code
+```
 ul {
   list-style-type: none; /* remove bullet points */
   padding: 0; /* remove default padding */
@@ -75,9 +78,11 @@ li {
   padding: 10px; /* add some padding */
   border-bottom: 1px solid #ccc; /* add a border */
 }
+```
 It is good to add interactivity and dynamic behavior to your website. Here is an example of using JavaScript to show an alert when each list item is clicked:
 
 Copy code
+```
 var listItems = document.getElementsByTagName("li");
 
 for (var i = 0; i < listItems.length; i++) {
@@ -85,6 +90,7 @@ for (var i = 0; i < listItems.length; i++) {
     alert("You clicked on " + this.innerHTML);
   });
 }
+```
 With this starter code, you can have a basic website which displays cat names, but you would need to extend this to make it more functional as per your requirement.
 
 You can use back-end programming language like Node.js, python or Ruby and a database system like MySQL, MongoDB to fetch cat data from the database and show it on the website rather then hard coding it.
@@ -102,6 +108,7 @@ There are a couple of ways to include JavaScript code in a website:
 
 Inline Scripting: You can include JavaScript code directly in the HTML file using the <script> tag. The <script> tag should be placed within the <body> or <head> of the HTML document, depending on when you want the script to run.
 Copy code
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -126,8 +133,11 @@ Copy code
   </script>
 </body>
 </html>
+```
 External Scripting: You can also create a separate JavaScript file and include it in your HTML using the src attribute of the <script> tag.
+
 Copy code
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -144,6 +154,7 @@ Copy code
   <script src="app.js"></script>
 </body>
 </html>
+```
 It is a best practice to keep your JavaScript code separate from your HTML and CSS, so it's easier to maintain and debug your code. You can place all your script in a single file, or multiple files based on the size of your application.
 
 Also, its good to minify your javascript files and bundle them before deploying on production, this will make your website load faster.
@@ -167,6 +178,7 @@ ChatGPT
 To add some color to your cat website, you can use CSS to style various elements on the page. Here's an example of how you could style the <h1> heading, the <ul> list, and the <li> list items:
 
 Copy code
+```
 h1 {
   color: purple;
 }
@@ -178,17 +190,22 @@ ul {
 li {
   color: blue;
 }
+```
 You can add this css in your stylesheet file(.css) and link it in the head of your html file.
 
 Copy code
+```
 <head>
   <title>Cats Website</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+```
 You can also add css styling in your HTML file with style attribute and you can add it to any specific HTML tag directly.
 
 Copy code
+```
 <h1 style="color: purple;">Welcome to the Cats Website</h1>
+```
 You can play with different CSS properties such as background-color, color, font-size, padding, margin etc to style your site as you want.
 Also you can use bootstrap or Foundation to make your website responsive, and style it as per your need.
 Please let me know if you have any specific styling requirement for the website.
@@ -205,16 +222,20 @@ Great! Now that you have separate files for your HTML, JavaScript, and CSS, you 
 To link your CSS file to your HTML, you can use the link tag in the head section of your HTML file, like this:
 
 Copy code
+```
 <head>
   <title>Cats Website</title>
   <link rel="stylesheet" type="text/css" href="cats.css">
 </head>
+```
 Similarly, you can link your JavaScript file to your HTML using the script tag. This should typically be placed just before the closing </body> tag, so that the JavaScript file will be loaded after the rest of the HTML has been parsed and rendered:
 
 Copy code
+```
 <script src="cats.js"></script>
 </body>
 </html>
+```
 Now, you can add HTML code in cats.html file, CSS styling in cats.css file and javascript functionalities in cats.js file.
 
 Please remember to test your website in different browsers
@@ -224,6 +245,7 @@ Please remember to test your website in different browsers
 
 jerry.tann@endress.com
 currently the cats.html file has code
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -240,6 +262,7 @@ currently the cats.html file has code
 </body>
 <script src="cats.js"></script>
 </html>
+```
 
 ChatGPT
 Great, that's a good start! The link tag in the head of your HTML file is linking to your CSS file, so any styling you add to that file will be applied to the elements on your webpage.
@@ -319,6 +342,7 @@ ChatGPT
 Sure! Here's an example of how you can use CSS to improve the layout and design of your cat website:
 
 Copy code
+```
 body {
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
@@ -351,6 +375,7 @@ h1 {
   text-align: center;
   margin-bottom: 40px;
 }
+```
 This CSS uses flexbox layout to make the website responsive, it uses a container class to set the max-width and center the content and then uses flexbox to create the grid layout.
 
 It also gives a background color to the body, a font-family to the text, box-shadow and border-radius to the cards to make it look more attractive.
@@ -358,7 +383,9 @@ It also gives a background color to the body, a font-family to the text, box-sha
 In order to include pictures in the page, you will need to host the images somewhere and include the URL of the images in the img tag.
 
 Copy code
+```
 <img src="https://images.unsplash.com/photo-1563158086-6f05282395a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="A fluffy cat">
+```
 You can use any image hosting platforms like Cloudinary, Imgur, or AWS S3 to host your images and use the URLs in the code.
 
 This is a basic example of how you can improve the design of your website and include images, you can customize it as per your requirement and you can use different CSS properties and values to achieve the desired design.
@@ -380,7 +407,9 @@ You can use any image hosting platforms like Cloudinary, Imgur, or AWS S3 to hos
 Additionally, you can also host the images in your own server by placing them in a directory within your project and then use the relative path to that directory in your img tag.
 
 Copy code
+```
 <img src="path/to/image.jpg" alt="image description">
+```
 You'll also have to make sure to update the URLs of the images in the img tag in your HTML file to point to the correct location of the images on your server.
 
 Once again, I apologize for any confusion caused. please let me know if you have any other question.
@@ -395,7 +424,9 @@ ChatGPT
 Certainly! Here's an example of how you can include an image in your website using an image that's hosted on a third-party website:
 
 Copy code
+```
 <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="A cute kitten">
+```
 This image is hosted on the website "pexels.com" and it's publicly accessible, so you can use this link in your img tag.
 
 You can replace this link with your own image url after uploading it to a public image hosting website or your server.
@@ -418,16 +449,20 @@ You can use CSS to resize an image. You can use the width and height properties 
 You can set the width and height of an image directly in the img tag,
 
 Copy code
+```
 <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="A cute kitten" width="300" height="200">
+```
 This will set the width and height of the image to 300 pixels and 200 pixels respectively.
 
 You can also set the width and height of an image by targeting it with CSS:
 
 Copy code
+```
 img {
   width: 300px;
   height: 200px;
 }
+```
 This will set the width and height of all the images on the page to 300 pixels and 200 pixels respectively.
 
 Please note that when setting the width and height of an image, the aspect ratio of the image should be kept in mind. If you change one dimension while keeping the aspect ratio constant will preserve the images quality.
@@ -435,10 +470,12 @@ Please note that when setting the width and height of an image, the aspect ratio
 You can use CSS properties like max-width and max-height to set the size of an image relative to the size of its container or to the size of the viewport.
 
 Copy code
+```
 img {
   max-width: 100%;
   max-height: 100%;
 }
+```
 This will make sure that the image never takes up more than the entire width and height of the viewport.
 
 Please let me know if you have any further question, I'll be happy to help you.
@@ -485,11 +522,13 @@ You can use CSS to style these elements and make them look like tiles, and you c
 Here's an example of how you can create a tile for a cat using HTML:
 
 Copy code
+```
 <div class="cat-tile">
   <img src="path/to/image.jpg" alt="cat image" class="cat-thumbnail">
   <h2 class="cat-title">Fluffy</h2>
   <p class="cat-description">A fluffy cat with soft white fur.</p>
 </div>
+```
 This code creates a container div with a class of "cat-tile", which will be used to style the tile with CSS. Inside the container, there's an img tag that will be used to display the cat's thumbnail picture. And a h2 and p elements that will be used to
 
 
@@ -502,6 +541,7 @@ ChatGPT
 Sure! Here's an example of how you can create multiple cat tiles using HTML and linking to actual images:
 
 Copy code
+```
 <div class="cat-tiles">
     <div class="cat-tile">
         <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" alt="A white fluffy cat" class="cat-thumbnail">
@@ -516,7 +556,7 @@ Copy code
     <div class="cat-tile">
         <img src="https://images.pexels.com/photos/4163046/pexels-photo-4163046.jpeg" alt="A tabby cat" class="cat-thumbnail">
 
-
+```
 
 jerry.tann@endress.com
 continue
@@ -525,6 +565,7 @@ ChatGPT
 Sure, here's the continuation of the sample cat tiles:
 
 Copy code
+```
         <h2 class="cat-title">Mittens</h2>
         <p class="cat-description">A tabby cat with soft fur and playful attitude.</p>
     </div>
@@ -539,6 +580,7 @@ Copy code
         <p class="cat-description">A Scottish Fold cat with cute folded ears and lovely disposition.</p>
     </div>
 </div>
+```
 This code creates a container div with a class of "cat-tiles", which will be used to style the tiles with CSS. Inside the container, there are multiple div elements with a class of "cat-tile", which will be used to create individual cat tiles. Inside the "cat-tile" div, there are an img tag that will be used to display the cat's thumbnail picture, a h2 element with a class of "cat-title" that will be used to
 
 
@@ -551,6 +593,7 @@ ChatGPT
 Certainly! Here's an example of how you can use CSS to style the cat tiles:
 
 Copy code
+```
 .cat-tiles {
   display: flex;
   flex-wrap: wrap;
@@ -580,6 +623,7 @@ Copy code
   font-size: 18px;
   color: #666;
 }
+```
 This CSS use display:flex and flex-wrap:wrap properties to create flexbox layout, this will help the cat-tiles to adjust itself according to the size of the viewport.
 The justify-content:space-between will ensure that the cat tiles are spaced out evenly.
 
@@ -694,11 +738,13 @@ ChatGPT
 Sure, here's an example of how you can use the object-fit CSS property to fix the image squashing issue:
 
 Copy code
+```
 img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
 }
+```
 In this example, the max-width property is set to 100%, ensuring that the image will never be wider than the container. The height property is set to auto, so that the height of the image will adjust proportionately with the width. And the object-fit property is set to cover, so that the entire container is covered by the image, while preserving its aspect ratio.
 
 By using this code, the image will be automatically scaled to fill the container, while maintaining its aspect ratio, so that it will not be squashed or distorted.
@@ -719,16 +765,19 @@ ChatGPT
 You can use the flex-wrap and flex-basis properties to control the number of tiles per row. Here's an example of how you can display a maximum of 3 tiles per row:
 
 Copy code
+```
 .cat-tiles {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .cat-tile {
   flex: 1 0 33.33%; /* flex-basis property set to 33.33% */
   margin: 20px;
   text-align: center;
 }
+```
 In this example, display:flex is used to create a flexbox layout for the cat-tiles container, flex-wrap:wrap is used to allow the items inside the container to wrap onto multiple lines if necessary.
 
 The flex: 1 0 33.33% value applies to the .cat-tile class.
