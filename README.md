@@ -1,5 +1,9 @@
 # ChatGPTGeneratedSite
 
+- the site at the end of the conversation:
+
+![finished site](./catssitescreen.png)
+
 - the conversation with chat gpt:
 
 ```
