@@ -6,7 +6,6 @@
 
 - the conversation with chat gpt:
 
-```
 
 jerry.tann@endress.com
 What programming language do you recommend
@@ -741,7 +740,4 @@ You can adjust the values of flex-basis property to fit your needs, such as 30% 
 
 You can add this CSS code to the CSS file you are currently using for the website.
 Please let me know if you have any other question or concerns, I'll be happy to help you out.
-
-```
-
 
