@@ -175,7 +175,7 @@ jerry.tann@endress.com
 please add some colors to my cats site
 
 ChatGPT
-To add some color to your cat website, you can use CSS to style various elements on the page. Here's an example of how you could style the <h1> heading, the <ul> list, and the <li> list items:
+To add some color to your cat website, you can use CSS to style various elements on the page. Here's an example of how you could style the ```<h1>``` heading, the ```<ul>``` list, and the ```<li>``` list items:
 
 Copy code
 ```
